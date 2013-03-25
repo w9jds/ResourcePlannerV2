@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="ResourcePlannerV2.ResourcePanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="113" d:DesignWidth="860" Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}">
+    <Grid Width="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Product Tier: " Foreground="White" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Desired Product: " Foreground="White" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,10,0"/>
+        <ComboBox Name="ProductTierBox" Grid.Row="0" Width="200" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Center" />
+        <ComboBox Name="DesiredProductBox" Grid.Row="1" Width="200" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Center" />
+        
+        <TextBlock Text="Calculate Using " Grid.Column="3" Foreground="White" Margin="15,0,5,0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"/>
+        <ComboBox Name="CalculateUsingBox" Width="100" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="2"/>
+        
+        <TextBlock Text="Of" Margin="5,0,5,0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Grid.RowSpan="2" Grid.Column="5" FontSize="15"/>
+        <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Grid.RowSpan="2" Grid.Column="6" Width="100" Name="AmountBox"/>
+        
+        <TextBlock Name="UnitBlock" Text="U3" Margin="5,0,5,0" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Grid.RowSpan="2" FontSize="15" Grid.Column="7"/>
+        
+        <Button Grid.Column="9" Grid.RowSpan="2" Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}" Margin="20" BorderBrush="Black" Width="65" Height="65"/>
+        
+    </Grid>
+</UserControl>
