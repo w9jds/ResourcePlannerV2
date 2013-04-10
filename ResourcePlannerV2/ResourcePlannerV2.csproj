@@ -57,7 +57,6 @@
       <DependentUpon>ResourcePanel.xaml</DependentUpon>
     </Compile>
     <Page Include="Controls\ResourceTile.xaml">
-    <Page Include="Controls\ResourceTileSingle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -71,8 +70,6 @@
     </Compile>
     <Compile Include="Controls\ResourceTile.xaml.cs">
       <DependentUpon>ResourceTile.xaml</DependentUpon>
-    <Compile Include="Controls\ResourceTileSingle.xaml.cs">
-      <DependentUpon>ResourceTileSingle.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
