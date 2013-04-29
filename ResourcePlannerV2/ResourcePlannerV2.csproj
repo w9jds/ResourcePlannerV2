@@ -56,7 +56,7 @@
     <Compile Include="Controls\ResourcePanel.xaml.cs">
       <DependentUpon>ResourcePanel.xaml</DependentUpon>
     </Compile>
-    <Page Include="Controls\ResourceTile.xaml">
+    <Page Include="Controls\SingleResourceTile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -68,8 +68,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Controls\ResourceTile.xaml.cs">
-      <DependentUpon>ResourceTile.xaml</DependentUpon>
+    <Compile Include="Controls\SingleResourceTile.xaml.cs">
+      <DependentUpon>SingleResourceTile.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -106,103 +106,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\23_64_2.png" />
-    <Resource Include="Resources\33_128_2.png" />
-    <Resource Include="Resources\9_64_6.png" />
-    <Resource Include="Resources\Aqueous Liquids.png" />
-    <Resource Include="Resources\Autotrophs.png" />
-    <Resource Include="Resources\Bacteria.png" />
-    <Resource Include="Resources\Barren.png" />
-    <Resource Include="Resources\Base Metals.png" />
-    <Resource Include="Resources\Biocells.png" />
-    <Resource Include="Resources\Biofuels.png" />
-    <Resource Include="Resources\Biomass.png" />
-    <Resource Include="Resources\Biotech Research Reports.png" />
-    <Resource Include="Resources\Broadcast Node.png" />
-    <Resource Include="Resources\Camera Drones.png" />
-    <Resource Include="Resources\Carbon Compounds.png" />
-    <Resource Include="Resources\Chiral Structures.png" />
-    <Resource Include="Resources\Complex Organisms.png" />
-    <Resource Include="Resources\Condensates.png" />
-    <Resource Include="Resources\Construction Blocks.png" />
-    <Resource Include="Resources\Consumer Electronics.png" />
-    <Resource Include="Resources\Coolant.png" />
-    <Resource Include="Resources\Cryoprotectant Solution.png" />
-    <Resource Include="Resources\Data Chips.png" />
-    <Resource Include="Resources\Electrolytes.png" />
-    <Resource Include="Resources\Enriched Uranium.png" />
-    <Resource Include="Resources\Felsic Magma.png" />
-    <Resource Include="Resources\Fertilizer.png" />
-    <Resource Include="Resources\Gas.png" />
-    <Resource Include="Resources\Gel-Matrix Biopaste.png" />
-    <Resource Include="Resources\Genetically Enhanced Livestock.png" />
-    <Resource Include="Resources\Guidance Systems.png" />
-    <Resource Include="Resources\Hazmat Detection Systems.png" />
-    <Resource Include="Resources\Heavy Metals.png" />
-    <Resource Include="Resources\Hermetic Membranes.png" />
-    <Resource Include="Resources\High-Tech Transmitter.png" />
-    <Resource Include="Resources\Ice.png" />
-    <Resource Include="Resources\Industrial Explosives.png" />
-    <Resource Include="Resources\Industrial Fibers.png" />
-    <Resource Include="Resources\Integrity Response Drones.png" />
-    <Resource Include="Resources\Ionic Solution.png" />
-    <Resource Include="Resources\Ionic Solutions.png" />
-    <Resource Include="Resources\Lava.png" />
-    <Resource Include="Resources\Livestock.png" />
-    <Resource Include="Resources\Mechanical Parts.png" />
-    <Resource Include="Resources\Micro Organisms.png" />
-    <Resource Include="Resources\Microfiber Shielding.png" />
-    <Resource Include="Resources\Miniature Electronics.png" />
-    <Resource Include="Resources\Nanites.png" />
-    <Resource Include="Resources\Nano-Factory.png" />
-    <Resource Include="Resources\Neocoms.png" />
-    <Resource Include="Resources\Noble Gas.png" />
-    <Resource Include="Resources\Noble Metals.png" />
-    <Resource Include="Resources\Non-CS Crystals.png" />
-    <Resource Include="Resources\Nuclear Reactors.png" />
-    <Resource Include="Resources\Oceanic.png" />
-    <Resource Include="Resources\Organic Mortar Applicators.png" />
-    <Resource Include="Resources\Oxides.png" />
-    <Resource Include="Resources\Oxidizing Compound.png" />
-    <Resource Include="Resources\Oxygen.png" />
-    <Resource Include="Resources\Planetary Vehicles.png" />
-    <Resource Include="Resources\Planktic Colonies.png" />
-    <Resource Include="Resources\Plasma.png" />
-    <Resource Include="Resources\Plasmoids.png" />
-    <Resource Include="Resources\Polyaramids.png" />
-    <Resource Include="Resources\Polytextiles.png" />
-    <Resource Include="Resources\Precious Metals.png" />
-    <Resource Include="Resources\Proteins.png" />
-    <Resource Include="Resources\Reactive Gas.png" />
-    <Resource Include="Resources\Reactive Metals.png" />
-    <Resource Include="Resources\Recursive Computing Module.png" />
-    <Resource Include="Resources\Robotics.png" />
-    <Resource Include="Resources\Rocket Fuel.png" />
-    <Resource Include="Resources\Self Harmonizing Power Core.png" />
-    <Resource Include="Resources\Silicate Glass.png" />
-    <Resource Include="Resources\Silicon.png" />
-    <Resource Include="Resources\Smartfab Units.png" />
-    <Resource Include="Resources\Sterile Conduits.png" />
-    <Resource Include="Resources\Storm.png" />
-    <Resource Include="Resources\Supercomputers.png" />
-    <Resource Include="Resources\Superconductors.png" />
-    <Resource Include="Resources\Supertensile Plastics.png" />
-    <Resource Include="Resources\Suspended Plasma.png" />
-    <Resource Include="Resources\Synthetic Oil.png" />
-    <Resource Include="Resources\Synthetic Synapses.png" />
-    <Resource Include="Resources\Temperate.png" />
-    <Resource Include="Resources\Test Cultures.png" />
-    <Resource Include="Resources\Toxic Metals.png" />
-    <Resource Include="Resources\Transcranial Microcontroller.png" />
-    <Resource Include="Resources\Transmitter.png" />
-    <Resource Include="Resources\Ukomi Superconductors.png" />
-    <Resource Include="Resources\Vaccines.png" />
-    <Resource Include="Resources\Viral Agent.png" />
-    <Resource Include="Resources\Water-Cooled CPU.png" />
-    <Resource Include="Resources\Water.png" />
-    <Resource Include="Resources\Wetware Mainframe.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
