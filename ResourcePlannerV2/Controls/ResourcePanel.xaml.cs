@@ -24,5 +24,18 @@ namespace ResourcePlannerV2
         {
             InitializeComponent();
         }
+
+        private void ProductTierBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void CalculateUsingBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (CalculateUsingBox.SelectedIndex == 0)
+                UnitBlock.Text = "u³";
+            else if (CalculateUsingBox.SelectedIndex == 1)
+                UnitBlock.Text = "m³";
+        }
     }
 }
