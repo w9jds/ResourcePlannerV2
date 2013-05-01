@@ -5,57 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="113" d:DesignWidth="860" Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}">
-    <UserControl.Resources>
-        <Style x:Key="ButtonStyleFix" TargetType="{x:Type Button}">
-            <Setter Property="FocusVisualStyle">
-                <Setter.Value>
-                    <Style>
-                        <Setter Property="Control.Template">
-                            <Setter.Value>
-                                <ControlTemplate>
-                                    <Rectangle Margin="2" SnapsToDevicePixels="True" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="Background" Value="#FFDDDDDD"/>
-            <Setter Property="BorderBrush" Value="#FF707070"/>
-            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="Padding" Value="1"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
-                            <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsDefaulted" Value="True">
-                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
-                            </Trigger>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" TargetName="border" Value="#FF517387"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="#FF3C7FB1"/>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background" TargetName="border" Value="#FFC4E5F6"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="#FF2C628B"/>
-                            </Trigger>
-                            <Trigger Property="IsEnabled" Value="False">
-                                <Setter Property="Background" TargetName="border" Value="#FFF4F4F4"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="#FFADB2B5"/>
-                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="#FF838383"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </UserControl.Resources>
+
     <Grid Width="Auto">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -74,15 +24,15 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Row="0" Grid.Column="1" Text="Product Tier: " Foreground="White" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Grid.Row="1" Grid.Column="1" Text="Desired Product: " Foreground="White" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,10,0"/>
-        <ComboBox Name="ProductTierBox" Grid.Row="0" Width="200" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Center" SelectionChanged="ProductTierBox_SelectionChanged">
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Product Tier: " Foreground="White" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,5,5"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Desired Product: " Foreground="White" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,5,0"/>
+        <ComboBox Name="ProductTierBox" Grid.Row="0" Width="200" VerticalAlignment="Bottom" Margin="0,0,0,5" Grid.Column="2" HorizontalAlignment="Center" SelectionChanged="ProductTierBox_SelectionChanged">
             <ListBoxItem Content="Tier 1"/>
             <ListBoxItem Content="Tier 2"/>
             <ListBoxItem Content="Tier 3"/>
             <ListBoxItem Content="Tier 4"/>
         </ComboBox>
-        <ComboBox Name="DesiredProductBox" Grid.Row="1" Width="200" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Center" />
+        <ComboBox Name="DesiredProductBox" Grid.Row="1" Width="200" VerticalAlignment="Top" Margin="0,5,0,0" Grid.Column="2" HorizontalAlignment="Center" />
 
         <TextBlock Text="Calculate Using " Grid.Column="3" Foreground="White" Margin="15,0,5,0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"/>
         <TextBlock Name="UnitBlock" Margin="5,0,5,0" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Grid.RowSpan="2" FontSize="15" Grid.Column="7"/>

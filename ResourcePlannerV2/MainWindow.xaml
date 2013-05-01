@@ -17,7 +17,7 @@
         <Menu Height="20" Margin="0" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}" Grid.Row="3" Grid.ColumnSpan="2"/>
 
         <StackPanel Grid.Row="1" Margin="10">
-            <Button x:Name="FillResource" HorizontalAlignment="Center" Width="65" Height="65" Margin="0" Click="FillResource_Click" BorderBrush="White">
+            <Button x:Name="FillResource" HorizontalAlignment="Center" Width="65" Height="65" Margin="0" Click="FillResource_Click" BorderBrush="Black" Style="{DynamicResource ButtonStyleFix}">
                 <Button.Background>
                     <ImageBrush ImageSource="Resources/33_128_2.png" Stretch="None"/>
                 </Button.Background>
